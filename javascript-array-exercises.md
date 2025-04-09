@@ -25,7 +25,7 @@ Print the first and the last element of the `fruits` array.
 
 ```javascript
 console.log(fruits[0])
-console.log(fruits[2])
+console.log(fruits[fruits.lenght -1])
 ```
 
 ---
@@ -66,7 +66,6 @@ Remove the first element from `fruits`.
 
 ```javascript
 fruits.shift()
-console.log(fruits)
 
 ```
 
@@ -77,7 +76,7 @@ console.log(fruits)
 Print how many items are in the `fruits` array.
 
 ```javascript
-console.log(fruits.length)
+fruits.length
 ```
 
 ---
@@ -89,7 +88,7 @@ Check if `"Banana"` exists in the `fruits` array.
 Expected output → `true` or `false`
 
 ```javascript
-console.log(fruits.includes('Banana'))
+fruits.includes('Banana')
 ```
 
 ---
@@ -99,7 +98,7 @@ console.log(fruits.includes('Banana'))
 Find the index of `"Orange"` in the `fruits` array.
 
 ```javascript
-console.log(fruits.indexOf('Orange'))
+fruits.indexOf('Orange')
 ```
 
 ---
@@ -111,8 +110,7 @@ Convert the `fruits` array to a single string separated by commas.
 Example output → `"Apple,Banana,Orange"`
 
 ```javascript
-const fruitString = fruits.join(",");
-console.log(`"${fruitString}"`)
+fruits.toString()
 ```
 
 ---
